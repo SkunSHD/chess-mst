@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a592392c-8822-4ec8-9a7d-0e03341836ea" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.babelrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/pages/LoginPage.component.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/pages/ProfilePage.component.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/utils/permissions.utils.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Routes.js" afterPath="$PROJECT_DIR$/src/components/Routes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/pages/HomePage.component.js" afterPath="$PROJECT_DIR$/src/components/pages/HomePage.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/pages/Page404.component.js" afterPath="$PROJECT_DIR$/src/components/pages/Page404.component.js" />
-    </list>
+    <list default="true" id="a592392c-8822-4ec8-9a7d-0e03341836ea" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -26,8 +17,8 @@
       <file leaf-file-name="Routes.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+            <state relative-caret-position="375">
+              <caret line="25" column="47" lean-forward="false" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="47" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
                 <element signature="e#127#186#0" expanded="true" />
@@ -276,12 +267,12 @@
       <updated>1523365679355</updated>
       <workItem from="1523365680775" duration="634000" />
       <workItem from="1523366660606" duration="431000" />
-      <workItem from="1523438994134" duration="1649000" />
+      <workItem from="1523438994134" duration="1720000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5056000" />
+    <option name="totallyTimeSpent" value="5127000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="23" width="1920" height="985" extended-state="0" />
@@ -645,8 +636,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Routes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        <state relative-caret-position="375">
+          <caret line="25" column="47" lean-forward="false" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="47" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
             <element signature="e#127#186#0" expanded="true" />
