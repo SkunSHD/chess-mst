@@ -21,31 +21,33 @@ const RouteComponent = ({ component: Component, ...rest }) => {
 };
 
 
+console.log(Ons);
 // @SOURCE: https://reacttraining.com/react-router/
 // TODO: https://reacttraining.com/react-router/web/example/auth-workflow
-const Routes = ()=>
-	<Router>
-		<Ons.Page>
-			<ul>
-				<Link to="/">Home</Link><br/>
-				<Link to="/profile">Profile</Link><br/>
-				<Link to="/login">Login</Link><br/>
-				<Link to="/test">test</Link><br/>
-				<Link to="/test5">test3</Link><br/>
-			</ul>
+const Routes = ()=> {
+	return (
+		<Router>
+			<Ons.Page>
+				<ons-tabbar>
+					<ons-tab active><Link to="/">Home</Link></ons-tab>
+					<ons-tab><Link to="/profile">Profile</Link></ons-tab>
+					<ons-tab><Link to="/login">Login</Link></ons-tab>
+					<ons-tab><Link to="/test">test</Link></ons-tab>
+				</ons-tabbar>
 
-			<hr />
+				<Ons.Button>Tap me!</Ons.Button>
 
-			<Ons.Button>Tap me!</Ons.Button>
+				<Switch>
+					<RouteComponent exact path="/" component={HomePage} />
+					<RouteComponent exact path="/profile" component={ProfilePage} />
+					<RouteComponent exact path="/login" component={LoginPage} />
+					<RouteComponent component={Page404} />
+				</Switch>
+			</Ons.Page>
+		</Router>
+	);
+}
 
-			<Switch>
-				<RouteComponent exact path="/" component={HomePage} />
-				<RouteComponent exact path="/profile" component={ProfilePage} />
-				<RouteComponent exact path="/login" component={LoginPage} />
-				<RouteComponent component={Page404} />
-			</Switch>
-		</Ons.Page>
-	</Router>
 ;
 
 export default Routes;
