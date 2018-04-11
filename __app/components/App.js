@@ -28,7 +28,7 @@ class App extends React.Component {
 					}
 				</header>
 				<p className="App-intro">
-					To get started, edit <code>src/App.js</code> and save to reload.
+					To get started, edit <code>__app/App.js</code> and save to reload.
 				</p>
 				<Routes />
 			</div>

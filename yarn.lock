@@ -2,6 +2,14 @@
 # yarn lockfile v1
 
 
+"@onsenui/custom-elements@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@onsenui/custom-elements/-/custom-elements-1.0.0.tgz#8e2b5c8968b8d94da70c6e92ecc56b47f79a0ff3"
+
+"@onsenui/fastclick@1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@onsenui/fastclick/-/fastclick-1.1.1.tgz#0708ec6c7bdca8b87a028deb0dbb66b92001f737"
+
 abab@^1.0.3:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/abab/-/abab-1.0.4.tgz#5faad9c2c07f60dd76770f71cf025b62a63cfd4e"
@@ -1795,7 +1803,7 @@ core-js@^1.0.0:
   version "1.2.7"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-1.2.7.tgz#652294c14651db28fa93bd2d5ff2983a4f08c636"
 
-core-js@^2.4.0, core-js@^2.5.0:
+core-js@^2.4.0, core-js@^2.5.0, core-js@^2.5.1:
   version "2.5.5"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.5.5.tgz#b14dde936c640c0579a6b50cabcc132dd6127e3b"
 
@@ -4920,6 +4928,14 @@ onetime@^2.0.0:
   dependencies:
     mimic-fn "^1.0.0"
 
+onsenui@^2.9.2:
+  version "2.9.2"
+  resolved "https://registry.yarnpkg.com/onsenui/-/onsenui-2.9.2.tgz#f860eb528b1e60ee4d8d5e1ec59ebd3002928355"
+  dependencies:
+    "@onsenui/custom-elements" "1.0.0"
+    "@onsenui/fastclick" "1.1.1"
+    core-js "^2.5.1"
+
 opn@5.2.0, opn@^5.1.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/opn/-/opn-5.2.0.tgz#71fdf934d6827d676cecbea1531f95d354641225"
@@ -5694,6 +5710,12 @@ react-dom@^16.3.1:
 react-error-overlay@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-4.0.0.tgz#d198408a85b4070937a98667f500c832f86bd5d4"
+
+react-onsenui@^1.10.0:
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/react-onsenui/-/react-onsenui-1.10.0.tgz#45bcbe646f9937a075aaa2ed05102180e8dd8126"
+  dependencies:
+    prop-types "^15.6.0"
 
 react-router-dom@^4.2.2:
   version "4.2.2"
