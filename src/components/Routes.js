@@ -5,7 +5,16 @@ import HomePage from "components/pages/HomePage.component";
 import Page404 from "components/pages/Page404.component";
 
 
+const RouteComponent = ({ component: Component, ...rest }) => {
+
+	return <Route {...rest} render={ (props)=> {
+		console.log(" ENTER3!", props, rest);
+		return <Component { ...props }/>;
+	} }/>
+};
+
 // @SOURCE: https://reacttraining.com/react-router/
+// TODO: https://reacttraining.com/react-router/web/example/auth-workflow
 const Routes = ()=>
 	<Router>
 		<div>
@@ -18,8 +27,8 @@ const Routes = ()=>
 			<hr />
 
 			<Switch>
-				<Route exact path="/" component={HomePage} />
-				<Route component={Page404} />
+				<RouteComponent exact path="/" component={HomePage} />
+				<RouteComponent component={Page404} />
 			</Switch>
 		</div>
 	</Router>
