@@ -1,13 +1,19 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link, Switch, Redirect } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
+// Utils
+import timeTraveller from "utils/timeTraveller.utils";
 // Pages
 import HomePage from "components/pages/HomePage.component";
 import ProfilePage from "components/pages/ProfilePage.component";
 import LoginPage from "components/pages/LoginPage.component";
+import RegistrationPage from "components/pages/RegistrationPage.component";
 import Page404 from "components/pages/Page404.component";
+// Components
+import Header from "components/header/Header.component";
+// import Breadcrumbs from "components/header/Breadcrumbs.component";
 
 
-const RouteComponent = ({ component: Component, ...rest }) => {
+const RouteComponent = ({ component: Component, ...rest })=> {
 	// TODO: Add user check here
 	// Need needAuth case
 	if(Component.permissions.needAuth === true) return <Redirect to={{ pathname: Component.permissions.redirectPath }} />;
@@ -23,40 +29,30 @@ const Routes = ()=> {
 	return (
 		<Router>
 			<div>
-				<nav className="pt-navbar pt-dark">
-					<div className="pt-navbar-group pt-align-left">
-						<div className="pt-navbar-heading">Chesslessons</div>
-						<span className="pt-navbar-divider" />
-						<button className="pt-button pt-minimal pt-icon-home">
-							<Link to="/">Home</Link>
-						</button>
-						<button className="pt-button pt-minimal pt-icon-new-person">
-							<Link to="/visitors">Visitors</Link>
-						</button>
-						<span className="pt-navbar-divider" />
-					</div>
-					<div className="pt-navbar-group pt-align-right">
-						<Link to="/profile">
-							<button className="pt-button pt-minimal pt-icon-person" />
-						</Link>
-						<span className="pt-navbar-divider" />
-						<Link to="/login">
-							<button className="pt-button pt-minimal pt-icon-log-in" />
-						</Link>
-					</div>
-				</nav>
+				<Header />
 
-				<ul className="pt-breadcrumbs">
-					<li><Link to="/" className="pt-breadcrumb pt-breadcrumb-current">Home</Link></li>
-					<li><span className="pt-breadcrumb ">Next?</span></li>
-				</ul>
+				{/*{ timeTraveller.canUndo ?*/}
+					{/*<button role="button" className="pt-button pt-small" onClick={ ()=> timeTraveller.undo() }>Undo</button>*/}
+					{/*:*/}
+					{/*<button role="button" className="pt-button pt-small" disabled>undo</button>*/}
+				{/*}*/}
+				{/*{ timeTraveller.canRedo ?*/}
+					{/*<button role="button" className="pt-button pt-small" onClick={ ()=> timeTraveller.redo() }>Redo</button>*/}
+					{/*:*/}
+					{/*<button role="button" className="pt-button pt-small" disabled>Redo</button>*/}
+				{/*}*/}
 
-				<Switch>
-					<RouteComponent exact path="/" component={HomePage} />
-					<RouteComponent exact path="/profile" component={ProfilePage} />
-					<RouteComponent exact path="/login" component={LoginPage} />
-					<RouteComponent component={Page404} />
-				</Switch>
+				<div style={{ margin: "0 auto", width: 1000, marginTop: 20 }}>
+					{/*<Breadcrumbs />*/}
+
+					<Switch>
+						<RouteComponent exact path="/" component={HomePage} />
+						<RouteComponent exact path="/profile" component={ProfilePage} />
+						<RouteComponent exact path="/login" component={LoginPage} />
+						<RouteComponent exact path="/registration" component={RegistrationPage} />
+						<RouteComponent component={Page404} />
+					</Switch>
+				</div>
 			</div>
 		</Router>
 	);
