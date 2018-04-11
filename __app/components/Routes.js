@@ -1,7 +1,5 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link, Switch, Redirect } from "react-router-dom";
-// Blueprint
-import { Button, Intent, Spinner } from "@blueprintjs/core";
 // Pages
 import HomePage from "components/pages/HomePage.component";
 import ProfilePage from "components/pages/ProfilePage.component";
@@ -11,8 +9,8 @@ import Page404 from "components/pages/Page404.component";
 
 const RouteComponent = ({ component: Component, ...rest }) => {
 	// TODO: Add user check here
-	// Need auth case
-	if(Component.permissions.auth === true) return <Redirect to={{ pathname: Component.permissions.redirectPath }} />;
+	// Need needAuth case
+	if(Component.permissions.needAuth === true) return <Redirect to={{ pathname: Component.permissions.redirectPath }} />;
 
 	// Default case
 	return <Route { ...rest } render={ (props)=> <Component { ...props } /> }/>

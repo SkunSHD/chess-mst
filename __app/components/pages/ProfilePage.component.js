@@ -7,7 +7,7 @@ import permissions from "utils/permissions.utils";
 class ProfilePage extends React.Component {
 
 	static permissions = {
-		auth: true
+		needAuth: true
 	};
 
 

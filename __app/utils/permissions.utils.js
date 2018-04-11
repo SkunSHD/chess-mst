@@ -1,6 +1,6 @@
 const permissions = (Component, b,c)=> {
 	Component.permissions = {
-		auth: false,
+		needAuth: false,
 		redirectPath: '/login',
 		...Component.permissions
 	};
