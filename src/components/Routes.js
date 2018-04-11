@@ -8,11 +8,12 @@ import Page404 from "components/pages/Page404.component";
 
 
 const RouteComponent = ({ component: Component, ...rest }) => {
+	// TODO: Add user check here
+	// Need auth case
+	if(Component.permissions.auth === true) return <Redirect to={{ pathname: "/login" }} />;
 
-	console.log(Component.permissions, "423");
-	return <Route {...rest} render={ (props)=> {
-		return <Component { ...props }/>;
-	} }/>
+	// Default case
+	return <Route { ...rest } render={ (props)=> <Component { ...props } /> }/>
 };
 
 
