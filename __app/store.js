@@ -3,6 +3,7 @@ import { types, onAction, onPatch, onSnapshot } from "mobx-state-tree";
 import RootModel from "models/Root.model";
 
 const store = RootModel.create({
+
 });
 
 

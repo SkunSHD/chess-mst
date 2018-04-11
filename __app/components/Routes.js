@@ -11,12 +11,13 @@ import Page404 from "components/pages/Page404.component";
 // Components
 import Header from "components/header/Header.component";
 // import Breadcrumbs from "components/header/Breadcrumbs.component";
+// Store
+import store from 'store'
 
 
 const RouteComponent = ({ component: Component, ...rest })=> {
-	// TODO: Add user check here
 	// Need needAuth case
-	if(Component.permissions.needAuth === true) return <Redirect to={{ pathname: Component.permissions.redirectPath }} />;
+	if(Component.permissions.needAuth === true && !store.user) return <Redirect to={{ pathname: Component.permissions.redirectPath }} />;
 
 	// Default case
 	return <Route { ...rest } render={ (props)=> <Component { ...props } /> }/>
