@@ -2,7 +2,7 @@ import React from 'react';
 // Utils
 import permissions from "utils/permissions.utils";
 
-
+@permissions
 class HomePage extends React.Component {
 
 	render() {
@@ -14,4 +14,4 @@ class HomePage extends React.Component {
 	}
 }
 
-export default permissions(HomePage);
+export default HomePage;

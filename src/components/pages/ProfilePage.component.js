@@ -3,6 +3,7 @@ import React from 'react';
 import permissions from "utils/permissions.utils";
 
 
+@permissions
 class ProfilePage extends React.Component {
 
 	static permissions = {
@@ -19,4 +20,4 @@ class ProfilePage extends React.Component {
 	}
 }
 
-export default permissions(ProfilePage);
+export default ProfilePage;

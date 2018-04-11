@@ -3,6 +3,7 @@ import React from 'react';
 import permissions from "utils/permissions.utils";
 
 
+@permissions
 class Page404 extends React.Component {
 
 	render() {
@@ -14,4 +15,4 @@ class Page404 extends React.Component {
 	}
 }
 
-export default permissions(Page404);
+export default Page404;

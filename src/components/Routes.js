@@ -34,6 +34,7 @@ const Routes = ()=>
 			<Switch>
 				<RouteComponent exact path="/" component={HomePage} />
 				<RouteComponent exact path="/profile" component={ProfilePage} />
+				<RouteComponent exact path="/login" component={LoginPage} />
 				<RouteComponent component={Page404} />
 			</Switch>
 		</div>

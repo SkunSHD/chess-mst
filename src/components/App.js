@@ -1,8 +1,7 @@
 import React from 'react';
 import logo from 'logo.svg';
 import 'App.css';
-// Store
-import store from "store";
+// Utils
 import timeTraveller from "utils/timeTraveller.utils";
 // Routes
 import Routes from "components/Routes";
