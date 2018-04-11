@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a592392c-8822-4ec8-9a7d-0e03341836ea" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/__app/components/auth/LoginForm.component.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/__app/components/auth/RegistrationForm.component.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/__app/components/header/Breadcrumbs.component.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/__app/components/header/Header.component.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/__app/components/pages/RegistrationPage.component.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/__app/App.css" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/__app/index.css" afterPath="$PROJECT_DIR$/__app/reset.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/__app/components/App.js" afterPath="$PROJECT_DIR$/__app/components/App.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/__app/components/Routes.js" afterPath="$PROJECT_DIR$/__app/components/Routes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/__app/components/pages/LoginPage.component.js" afterPath="$PROJECT_DIR$/__app/components/pages/LoginPage.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/__app/index.js" afterPath="$PROJECT_DIR$/__app/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/__app/components/header/Header.component.js" afterPath="$PROJECT_DIR$/__app/components/header/Header.component.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,20 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Header.component.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/__app/components/header/Header.component.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="68" lean-forward="false" selection-start-line="15" selection-start-column="68" selection-end-line="15" selection-end-column="68" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -116,7 +91,7 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1920" />
+    <option name="x" value="-1919" />
     <option name="y" value="23" />
     <option name="width" value="1920" />
     <option name="height" value="985" />
@@ -300,10 +275,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14964000" />
+    <option name="totallyTimeSpent" value="15960000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1920" y="23" width="1920" height="985" extended-state="0" />
+    <frame x="-1919" y="23" width="1920" height="985" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27582535" sideWeight="0.49119374" order="0" side_tool="false" content_ui="combo" />
@@ -315,7 +290,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27278107" sideWeight="0.5088063" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297456" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25346112" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25346112" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -577,7 +552,7 @@
         <state relative-caret-position="60">
           <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="17" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -595,7 +570,7 @@
         <state relative-caret-position="150">
           <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
-            <element signature="e#74#123#0" expanded="true" />
+            <element signature="e#74#123#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -637,8 +612,8 @@
         <state relative-caret-position="468">
           <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#185#244#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="false" />
+            <element signature="e#185#244#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -653,10 +628,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/__app/components/header/Header.component.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="68" lean-forward="false" selection-start-line="15" selection-start-column="68" selection-end-line="15" selection-end-column="68" />
+        <state relative-caret-position="60">
+          <caret line="4" column="38" lean-forward="true" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="false" />
           </folding>
         </state>
       </provider>

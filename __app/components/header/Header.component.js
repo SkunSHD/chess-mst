@@ -6,7 +6,7 @@ class Header extends React.Component {
 
 	render() {
 		return (
-			<nav className="pt-navbar pt-dark">
+			<nav className="pt-navbar">
 				<div className="pt-navbar-group pt-align-left">
 					<Link to="/" style={{ color: "#f5f8fa" }}><div className="pt-navbar-heading">Chesslessons</div></Link>
 					<span className="pt-navbar-divider" />
