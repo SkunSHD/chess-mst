@@ -19,6 +19,9 @@ onPatch(store, (patch)=> {
 		case "remove":
 			color = 'color: darkred;';
 			break;
+		default:
+			color = 'color: black';
+			break;
 	}
 	console.groupCollapsed(`%c🦄🌈 [@action: ${patch.op} ${patch.path}]`, color);
 	console.log(patch);
