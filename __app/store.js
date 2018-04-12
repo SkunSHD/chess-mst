@@ -2,9 +2,7 @@ import { types, onAction, onPatch, onSnapshot } from "mobx-state-tree";
 // Models
 import RootModel from "models/Root.model";
 
-const store = RootModel.create({
-
-});
+const store = RootModel.create({});
 
 
 // @SOURCE: https://github.com/mobxjs/mobx-state-tree/blob/master/API.md#onpatch
