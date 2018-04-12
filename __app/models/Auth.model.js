@@ -2,28 +2,27 @@ import { types } from "mobx-state-tree";
 // Firebase
 import FBS from "firebase/API.firebase";
 
-
 const Auth = {
 };
 
 
 const actions = (self)=> {
 	return {
-		login: (store)=> console.log(`%c login`, 'background: green', store),
-		logout: (store)=> console.log(`%c logout`, 'background: orange', store),
+		setUser: (store, user)=> store.user = user,
+
+		login: (store, { login, password })=> FBS.login(login, password),
+		logout: (store)=> FBS.logout(),
 		registration: (store)=> console.log(`%c registration`, 'background: pink', store),
 
 		setOnAuthStateChangedListener: (store)=> {
 			FBS.authStateChangedDisposer = FBS.auth.onAuthStateChanged((user)=> {
-				console.log('onAuthStateChanged', user);
-				!!user ?
-					store.user = null
-					:
-					store.user = user;
+				console.log(`%c onAuthStateChanged [${ user ? 'user' : ''}]`, 'background: orange')
+				store.setUser(user ? Object.assign({}, user.providerData[0]) : null);
+				if(!store.isProjectReady) store.setProjectReady(true);
 			});
 		},
 
-		removeOnAuthStateChangeListener: ()=> {
+		removeOnAuthStateChangeListener: (store)=> {
 			FBS.authStateChangedDisposer();
 		}
 	};

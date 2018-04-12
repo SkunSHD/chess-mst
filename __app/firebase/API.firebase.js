@@ -1,5 +1,6 @@
-import firebase from 'firebase'
-require('firebase/firestore')
+// Firebase
+import firebase from 'firebase';
+require('firebase/firestore');
 
 //
 // (def collections {
@@ -20,7 +21,7 @@ const config = {
 firebase.initializeApp(config);
 
 const firestore = firebase.firestore();
-
+window.firebase = firebase
 const FBS = {
 	firebase,
 	firestore,
@@ -30,8 +31,8 @@ const FBS = {
 	},
 
 	auth: firebase.auth(),
-	login: firebase.auth().signInWithEmailAndPassword,
-	signOut: firebase.auth().signOut
+	login: (login, password)=> firebase.auth().signInWithEmailAndPassword(login, password),
+	logout: ()=> firebase.auth().signOut()
 };
 
 

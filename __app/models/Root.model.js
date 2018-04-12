@@ -4,7 +4,8 @@ import Auth from 'models/Auth.model';
 
 
 const RootModel = {
-	user: types.maybe(User)
+	user: types.maybe(User),
+	isProjectReady: false
 };
 
 const auth = Auth.create();
@@ -12,11 +13,19 @@ const auth = Auth.create();
 
 const actions = (store)=> {
 	return {
+
+		setProjectReady: (isProjectReady = true)=> store.isProjectReady = isProjectReady,
+
 		// Auth
+		setUser: (user)=> auth.setUser(store, user),
+		setOnAuthStateChangedListener: () => auth.setOnAuthStateChangedListener(store),
+		removeOnAuthStateChangeListener: () => auth.removeOnAuthStateChangeListener(store),
 		isExist: ()=> auth.isExist(store),
-		login: ()=> auth.login(store),
+
+		login: ({ login, password })=> auth.login(store, { login, password }),
+
 		registration: ()=> auth.registration(store),
-		logout: ()=> auth.logout(store)
+		logout: ()=> auth.logout()
 	};
 };
 

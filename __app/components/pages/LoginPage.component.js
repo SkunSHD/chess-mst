@@ -5,8 +5,15 @@ import permissions from "utils/permissions.utils";
 import LoginForm from "components/auth/LoginForm.component";
 
 
+
 @permissions
 class LoginPage extends React.Component {
+
+	static permissions = {
+		notForAuth: true,
+		redirectPath: "/"
+	};
+
 
 	render() {
 		return (

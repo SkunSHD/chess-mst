@@ -1,10 +1,18 @@
 import React from 'react';
+import { observer } from 'mobx-react';
 import { Link } from "react-router-dom";
+// Store
+import store from 'store'
 
 
+@observer
 class Header extends React.Component {
 
+	logout = ()=> (1)
+
 	render() {
+		console.log('%%---> store.user', store.user)
+
 		return (
 			<nav className="pt-navbar">
 				<div className="pt-navbar-group pt-align-left">
@@ -31,9 +39,15 @@ class Header extends React.Component {
 						<button className="pt-button pt-minimal pt-icon-new-person" />
 					</Link>
 					<span className="pt-navbar-divider" />
-					<Link to="/login">
-						<button className="pt-button pt-minimal pt-icon-log-in" />
-					</Link>
+						{ store.user ?
+							<button className="pt-button pt-minimal pt-icon-log-out"
+							        onClick={store.logout}
+									title="logout" />
+							:
+							<Link to="/login">
+								<button className="pt-button pt-minimal pt-icon-log-in" />
+							</Link>
+						}
 				</div>
 			</nav>
 		)
