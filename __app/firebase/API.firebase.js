@@ -1,3 +1,5 @@
+import firebase from 'firebase'
+require('firebase/firestore')
 
 //
 // (def collections {
@@ -6,8 +8,18 @@
 // :deleted_visitors (.collection firestore "deleted_visitors")
 // })
 
-const firebase = window.firebase;
-const firestore = window.firebase.firestore();
+const config = {
+	apiKey: "AIzaSyCsaEXo297Mo1Js08CUQ9DzWSYqJDQBdRo",
+	authDomain: "cheessons.firebaseapp.com",
+	databaseURL: "https://cheessons.firebaseio.com",
+	projectId: "cheessons",
+	storageBucket: "cheessons.appspot.com",
+	messagingSenderId: "105788159539"
+};
+
+firebase.initializeApp(config);
+
+const firestore = firebase.firestore();
 
 const FBS = {
 	firebase,
