@@ -17,6 +17,7 @@ const FBS = {
 		visitors: firestore.collection("visitors")
 	},
 
+	auth: firebase.auth(),
 	login: firebase.auth().signInWithEmailAndPassword,
 	signOut: firebase.auth().signOut
 };

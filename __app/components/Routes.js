@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
 // Utils
-import timeTraveller from "utils/timeTraveller.utils";
+// import timeTraveller from "utils/timeTraveller.utils";
 // Pages
 import HomePage from "components/pages/HomePage.component";
 import ProfilePage from "components/pages/ProfilePage.component";
