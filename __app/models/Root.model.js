@@ -12,7 +12,6 @@ const auth = Auth.create();
 
 const actions = (store)=> {
 	return {
-
 		// Auth
 		isExist: ()=> auth.isExist(store),
 		login: ()=> auth.login(store),
