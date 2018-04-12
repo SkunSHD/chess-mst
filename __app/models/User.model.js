@@ -1,7 +1,6 @@
 import { types, getParent } from "mobx-state-tree";
 
 const User = {
-	authorized: false
 };
 
 
