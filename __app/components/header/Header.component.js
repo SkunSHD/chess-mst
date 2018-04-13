@@ -8,11 +8,7 @@ import store from 'store'
 @observer
 class Header extends React.Component {
 
-	logout = ()=> (1)
-
 	render() {
-		console.log('%%---> store.user', store.user)
-
 		return (
 			<nav className="pt-navbar">
 				<div className="pt-navbar-group pt-align-left">

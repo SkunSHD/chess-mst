@@ -1,19 +1,21 @@
 import { types } from "mobx-state-tree";
 import User from 'models/User.model';
 import Auth from 'models/Auth.model';
+import Visitor from 'models/Visitor.model';
 
 
 const RootModel = {
+	isProjectReady: false,
 	user: types.maybe(User),
-	isProjectReady: false
+	visitors: types.optional(types.array(Visitor), [])
 };
+
 
 const auth = Auth.create();
 
 
 const actions = (store)=> {
 	return {
-
 		setProjectReady: (isProjectReady = true)=> store.isProjectReady = isProjectReady,
 
 		// Auth
@@ -30,4 +32,9 @@ const actions = (store)=> {
 };
 
 
-export default types.model(RootModel).actions(actions);
+const views = (store)=> ({
+
+})
+
+
+export default types.model(RootModel).views(views).actions(actions);

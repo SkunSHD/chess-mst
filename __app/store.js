@@ -2,7 +2,16 @@ import { onPatch } from "mobx-state-tree";
 // Models
 import RootModel from "models/Root.model";
 
-const store = RootModel.create({});
+
+const RootModelDefault = {
+	visitors: [
+		{name: 'Blatnoi', timestamp: Date.now()},
+		{name: 'Plechevaya', timestamp: Date.now() - 86400000}
+	]
+}
+
+
+const store = RootModel.create(RootModelDefault);
 
 
 // @SOURCE: https://github.com/mobxjs/mobx-state-tree/blob/master/API.md#onpatch

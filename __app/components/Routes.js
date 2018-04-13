@@ -6,6 +6,7 @@ import { observer } from 'mobx-react';
 // import timeTraveller from "utils/timeTraveller.utils";
 // Pages
 import HomePage from "components/pages/HomePage.component";
+import VisitorsPage from "components/pages/VisitorsPage.component";
 import ProfilePage from "components/pages/ProfilePage.component";
 import LoginPage from "components/pages/LoginPage.component";
 import RegistrationPage from "components/pages/RegistrationPage.component";
@@ -56,6 +57,7 @@ const Routes = ()=> {
 							<RouteComponent exact path="/profile" component={ProfilePage} />
 							<RouteComponent exact path="/login" component={LoginPage} />
 							<RouteComponent exact path="/registration" component={RegistrationPage} />
+							<RouteComponent exact path="/visitors" component={VisitorsPage} />
 							<RouteComponent component={Page404} />
 						</Switch>
 					</div>

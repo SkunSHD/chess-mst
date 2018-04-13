@@ -32,7 +32,9 @@ const FBS = {
 
 	auth: firebase.auth(),
 	login: (login, password)=> firebase.auth().signInWithEmailAndPassword(login, password),
-	logout: ()=> firebase.auth().signOut()
+	logout: ()=> firebase.auth().signOut(),
+
+	getVisitors: ()=> 'visitors'
 };
 
 
